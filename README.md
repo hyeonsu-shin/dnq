@@ -149,7 +149,7 @@ date:   2021-04-11 11:43:44 +0900
 ```
 public static void main(String[] args)
     {
-
+        long start = System.currentTimeMillis();
         int[] wt = { 10, 40, 20, 30};
         int[] val = { 60, 40, 100, 120};
         int capacity = 50;
@@ -159,6 +159,8 @@ public static void main(String[] args)
         // Function call
         System.out.println("총 용량의 가치 = "
                 + maxValue + "만원");
+        long end = System.currentTimeMillis();
+        System.out.println( "실행 시간 : " + ( end - start ));
 
     }
 ```
